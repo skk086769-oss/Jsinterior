@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102d24">
+<title>JS INTERIOR | Home & Interior Collection</title>
+<style>
+:root{--green:#35204f;--green2:#563777;--gold:#d6b56d;--cream:#f7f2fb;--ink:#241b2d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--ink)}
+header{background:var(--green);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #0002}
+.nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:24px;font-weight:800;letter-spacing:2px;color:var(--gold)}.brand small{display:block;font-size:10px;letter-spacing:3px;color:#eee;font-weight:400;margin-top:3px}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:13px}nav a:hover{color:var(--gold)}
+.hero{min-height:470px;background:linear-gradient(90deg,#0d241eeF,#0d241e99),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;color:white}
+.hero-inner{max-width:1180px;width:100%;margin:auto;padding:65px 22px}.eyebrow{color:var(--gold);letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.04;margin:15px 0;max-width:680px}.hero p{max-width:560px;line-height:1.7;color:#eee;font-size:16px}
+.btn{display:inline-block;background:var(--gold);color:#18271f;padding:13px 22px;border-radius:3px;text-decoration:none;font-weight:bold;margin-top:14px}
+section{padding:65px 20px}.wrap{max-width:1180px;margin:auto}.section-head{text-align:center;margin-bottom:32px}.section-head span{color:#9b783b;font-size:11px;letter-spacing:3px;font-weight:bold}.section-head h2{font-size:32px;margin:10px 0;color:var(--green)}.section-head p{color:#68716c;margin:0}
+.categories{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tile{position:relative;min-height:210px;border-radius:5px;overflow:hidden;background:#ddd;color:white;text-decoration:none;box-shadow:0 5px 18px #0001}
+.tile img{width:100%;height:100%;min-height:210px;object-fit:cover;display:block;transition:transform .4s}.tile:hover img{transform:scale(1.06)}
+.tile:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#071811df)}.tile strong{position:absolute;bottom:18px;left:17px;z-index:1;font-size:18px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.feature img{width:100%;height:360px;object-fit:cover;border-radius:5px}.feature h2{font-size:34px;color:var(--green);margin:10px 0}.feature p{line-height:1.8;color:#626c66}
+.products{background:#fcf9ff}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:white;border:1px solid #eee;border-radius:5px;overflow:hidden}.product img{width:100%;height:220px;object-fit:cover;display:block}.product div{padding:17px}.product h3{margin:0 0 7px;color:var(--green)}.product p{margin:0;color:#6b746f;font-size:13px;line-height:1.6}
+.contact{background:var(--green);color:white;text-align:center}.contact h2{color:var(--gold);font-size:32px}.contact p{line-height:1.8;color:#e4e9e5}.contact .btn{margin:10px 7px}
+footer{background:#21132f;color:#c8d0ca;text-align:center;padding:20px;font-size:12px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.feature{grid-template-columns:1fr}.feature img{height:280px}nav{gap:10px}nav a{font-size:12px}}
+@media(max-width:520px){.nav{align-items:flex-start;flex-direction:column}.brand{font-size:22px}nav{width:100%;justify-content:space-between}.hero{min-height:420px}.grid{gap:10px}.tile,.tile img{min-height:160px}.tile strong{font-size:15px;left:12px;bottom:13px}.product-grid{grid-template-columns:1fr 1fr;gap:10px}.product img{height:145px}.product div{padding:12px}.product h3{font-size:15px}section{padding:48px 15px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">JS INTERIOR<small>STYLE • COMFORT • QUALITY</small></div><nav><a href="#home">Home</a><a href="#categories">Collections</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<div class="hero" id="home"><div class="hero-inner"><div class="eyebrow">MAKE YOUR SPACE BEAUTIFUL</div><h1>Beautiful Interiors.<br>Comfortable Living.</h1><p>Explore beds, dining sets, Arabic Majlis, curtains, sofas, sofa fabrics, carpets and rugs for your home.</p><a class="btn" href="#categories">EXPLORE COLLECTION</a></div></div>
+<section class="categories" id="categories"><div class="wrap"><div class="section-head"><span>OUR COLLECTIONS</span><h2>Find Your Perfect Style</h2><p>Furniture, Arabic Majlis, curtains, sofa, carpets and rugs — all in one place.</p></div>
+<div class="grid">
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Interior rugs"><strong>Carpets & Rugs</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Curtains and interior"><strong>Curtains</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Sofa"><strong>Sofa & Sofa Cloth</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80" alt="Furniture"><strong>Furniture</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=700&q=80" alt="Arabic majlis"><strong>Arabic Majlis</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80" alt="Carpet tiles"><strong>Carpet Tiles</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80" alt="Flooring"><strong>Vinyl Flooring</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=80" alt="Prayer room"><strong>Prayer Mats & Mosque Rolls</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Bedroom furniture"><strong>Beds & Bedroom Sets</strong></a>
+<a class="tile" href="#products"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=700&q=80" alt="Dining furniture"><strong>Dining Tables</strong></a>
+</div></div></section>
+<section id="about"><div class="wrap feature"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Elegant home interior"><div><div class="eyebrow">WELCOME TO JS INTERIOR</div><h2>Quality That Makes a Difference</h2><p>We bring together stylish interior essentials for homes, offices and special spaces. Browse our collection and contact us for product details, availability and orders.</p><a class="btn" href="#contact">CONTACT US</a></div></div></section>
+<section class="products" id="products"><div class="wrap"><div class="section-head"><span>FEATURED IDEAS</span><h2>Explore Our Style</h2><p>Sample showcase images — actual product photos and prices can be added later.</p></div><div class="product-grid">
+<div class="product"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Living room carpet"><div><h3>Premium Rugs</h3><p>Elegant designs for living spaces</p></div></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Curtain decor"><div><h3>Curtain Collection</h3><p>Beautiful looks for every room</p></div></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Sofa"><div><h3>Sofa & Fabric</h3><p>Comfort with attractive finishes</p></div></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="eyebrow">VISIT OR CONTACT US</div><h2>JS INTERIOR</h2><p>Shah Tower, Gora More Furniture Market,<br>H-13, Islamabad</p><p><strong>03175843149</strong></p><a class="btn" href="https://wa.me/923175843149">WHATSAPP US</a><a class="btn" href="tel:+923175843149">CALL NOW</a></div></section>
+</main><footer>© 2026 JS INTERIOR • All Rights Reserved</footer>
+</body></html>
